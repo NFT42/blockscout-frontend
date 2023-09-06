@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: us-central1-docker.pkg.dev/${PROJECT_ID:-minikube}/nameless/blockscout-frontend:${DOCKER_TAG:-1.0.0-stealthtest0.1.0}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      -  .env
+    ports:
+      - 3000:3000
+
