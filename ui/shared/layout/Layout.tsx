@@ -2,6 +2,7 @@ import React from 'react';
 
 import type { Props } from './types';
 
+import config from 'configs/app';
 import IndexingAlertBlocks from 'ui/home/IndexingAlertBlocks';
 import AppErrorBoundary from 'ui/shared/AppError/AppErrorBoundary';
 import Header from 'ui/snippets/header/Header';
@@ -14,7 +15,7 @@ const LayoutDefault = ({ children }: Props) => {
       <Layout.MainArea>
         <Layout.SideBar/>
         <Layout.MainColumn>
-          <IndexingAlertBlocks/>
+          { !config.UI.indexingAlert.isHidden && <IndexingAlertBlocks/> }
           <Header/>
           <AppErrorBoundary>
             <Layout.Content>

@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import type { FormEvent } from 'react';
 import React from 'react';
 
+import config from 'configs/app';
 import IndexingAlertBlocks from 'ui/home/IndexingAlertBlocks';
 import useMarketplaceApps from 'ui/marketplace/useMarketplaceApps';
 import SearchResultListItem from 'ui/searchResults/SearchResultListItem';
@@ -181,12 +182,10 @@ const SearchResultsPageContent = () => {
 
   return (
     <>
-      <IndexingAlertBlocks/>
+      { !config.UI.indexingAlert.isHidden && <IndexingAlertBlocks/> }
       <Header renderSearchBar={ renderSearchBar }/>
       <AppErrorBoundary>
-        <Layout.Content>
-          { pageContent }
-        </Layout.Content>
+        <Layout.Content>{ pageContent }</Layout.Content>
       </AppErrorBoundary>
     </>
   );
