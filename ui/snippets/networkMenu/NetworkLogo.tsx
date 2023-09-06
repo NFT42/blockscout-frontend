@@ -82,6 +82,10 @@ const NetworkLogo = ({ isCollapsed, onClick }: Props) => {
         display={{ base: 'none', lg: isCollapsed === false ? 'none' : 'block', xl: isCollapsed ? 'block' : 'none' }}
         style={ iconStyle }
       />
+      <div style={{
+        fontWeight: 'bold',
+        paddingLeft: '10px',
+      }}>StealthTest</div>
     </Box>
   );
 };
