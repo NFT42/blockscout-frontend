@@ -6,6 +6,8 @@
     <span> blockchain explorer</span>
 </p>
 
+# >>> [STEALTHTEST README](./README-STEALTHTEST.md) <<<
+
 ## Running and configuring the app
 
 App is distributed as a docker image. Here you can find information about the [package](https://github.com/blockscout/frontend/pkgs/container/frontend) and its recent [releases](https://github.com/blockscout/frontend/releases).
