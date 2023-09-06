@@ -36,8 +36,8 @@ const colors = {
     '800': '#1A202C',
     '900': '#171923',
   },
-  black: '#101112',
-  white: '#ffffff',
+  black: '#09090b',
+  white: '#fafafa',
   blackAlpha: {
     '50': 'RGBA(16, 17, 18, 0.04)',
     '100': 'RGBA(16, 17, 18, 0.06)',
@@ -60,6 +60,13 @@ const colors = {
   facebook: '#4460A0',
   medium: '#231F20',
   reddit: '#FF4500',
+  stealthtest: {
+    backgroundFillLight: '#fafafa',
+    backgroundFillDark: '#09090b',
+    cardBackgroundFillLight: '#e4e4e7',
+    cardBackgroundFillDark: '#27272a',
+    purple: '#8a63d2',
+  },
 };
 
 export default colors;
