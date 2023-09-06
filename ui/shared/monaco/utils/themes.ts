@@ -3,7 +3,7 @@ export const light = {
   inherit: true,
   rules: [],
   colors: {
-    'editor.background': '#f5f5f6',
+    'editor.background': '#fafafa',
     'editorWidget.background': '#f5f5f6',
 
     'tab.activeBackground': '#f5f5f6',
@@ -23,7 +23,7 @@ export const light = {
 
     'badge.background': '#c4c4c4',
 
-    'sideBar.background': '#eee',
+    'sideBar.background': '#fafafa',
 
     focusBorder: '#0090f1',
 
@@ -45,7 +45,7 @@ export const dark = {
   inherit: true,
   rules: [],
   colors: {
-    'editor.background': '#1a1b1b',
+    'editor.background': '#09090b',
     'editorWidget.background': '#1a1b1b',
 
     'tab.activeBackground': '#1a1b1b', // black
@@ -65,7 +65,7 @@ export const dark = {
 
     'breadcrumbs.foreground': 'rgb(97, 97, 97)',
 
-    'sideBar.background': '#222',
+    'sideBar.background': '#09090b',
 
     focusBorder: '#007fd4',
 
