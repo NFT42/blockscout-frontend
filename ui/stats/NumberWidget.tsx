@@ -8,7 +8,7 @@ type Props = {
 }
 
 const NumberWidget = ({ label, value, isLoading }: Props) => {
-  const bgColor = useColorModeValue('blue.50', 'blue.800');
+  const bgColor = useColorModeValue('stealthtest.cardBackgroundFillLight', 'stealthtest.cardBackgroundFillDark');
   const skeletonBgColor = useColorModeValue('blackAlpha.50', 'whiteAlpha.50');
 
   return (
